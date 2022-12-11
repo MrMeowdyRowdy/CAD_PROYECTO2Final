@@ -38,7 +38,7 @@
                 />
 
             <Image
-                Source="fondoprincipal.jpg"
+                Source="estudio.jpg"
                 HeightRequest="400"
                 HorizontalOptions="Center"
                 />

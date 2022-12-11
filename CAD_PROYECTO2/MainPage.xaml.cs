@@ -9,19 +9,16 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private async void SeeMore1_Clicked(object sender, EventArgs e)
-	{
-        await Shell.Current.GoToAsync(nameof(CDServicios.Servicio1));
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Views.SobreNosotros));
     }
 
-	private async void SeeMore2_Clicked(object sender, EventArgs e)
-	{
-        await Shell.Current.GoToAsync(nameof(CDServicios.Servicio2));
-    }
 
-	private async void SeeMore3_Clicked(object sender, EventArgs e)
-	{
-        await Shell.Current.GoToAsync(nameof(CDServicios.Servicio3));
+
+    private async void servicios_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Anonimo.AServicios));
     }
 
 }
