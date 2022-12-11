@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\fondoprincipal.png" />
 	  <None Remove="Resources\Images\lock.png" />
 	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Anonimo.AMainPage"
-             Title="Main Page">
+             Title="Pagina Principal">
     
     <ContentPage.ToolbarItems >
         <ToolbarItem Text="Login" Clicked="Add_Clicked" IconImageSource="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\icon usuario.png" />
@@ -10,70 +10,86 @@
 
     <ScrollView>
         <VerticalStackLayout
+            Margin="40"
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            
-            
+
             <Label
-                Text="Photografy Studio"
+                Text="Estudio fotográfico C.A.D"
+                FontFamily="Lato"
+                FontAttributes="Bold,Italic"
+                
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" 
+                FontSize="48"
+                HorizontalOptions="Center"
                 VerticalOptions="Start"
                 />
 
+            <Label
+                Text="Estudio fotográfico ubicado en Quito con más de 30 años de experiencia en fotografía y revelado"
+                FontFamily="Lato"
+                FontAttributes="Italic"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
             <Image
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
+                Source="fondoprincipal.jpg"
                 HeightRequest="400"
-                HorizontalOptions="Center" 
-                SemanticProperties.HeadingLevel="Level2"/>
+                HorizontalOptions="Center"
+                />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                Text="Espacio profesional que permite vivir una experiencia única, con atención personalizada, en un ambiente con arquitectura industrial. Las áreas de trabajo están diseñadas de manera confortable. Poseemos dos plantas con todo lo que pueda necesitar. Estratégicamente ubicado en la zona Centro Norte del Distrito Metropolitano de Quito."
+                FontFamily="Lato"
                 FontSize="18"
-                HorizontalOptions="Center" />
-            
-            
-                
-            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="2">
-                
-                <Image 
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
-                HeightRequest="100"
-                HorizontalOptions="Center" 
-                VerticalOptions="Start"
-                       />
-                <Button 
-                        Text="Ver Servicio 1"
-                    Clicked="SeeMore1_Clicked" 
-                        VerticalOptions="End"/>
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
 
-                <Image  Grid.Column="1"
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
-                HeightRequest="100"
-                HorizontalOptions="Center" 
-                VerticalOptions="Start"
-                       />
-                <Button Grid.Column="1"
-                    Text="Ver servicio 2"
-                    VerticalOptions="End"
-                    Clicked="SeeMore2_Clicked" />
-                
-                <Image  Grid.Column="2"
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
-                HeightRequest="100"
-                HorizontalOptions="Center" 
-                VerticalOptions="Start"
-                       />
-                <Button Grid.Column="2"
-                    Text="Ver servicio 2"
-                    VerticalOptions="End"
-                    Clicked="SeeMore3_Clicked" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="50" RowSpacing="20" RowDefinitions="*,*">
+                <Image
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Source="estudio.jpg"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    />
+
+                <Button
+                    FontFamily="Lato"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="Visualizar servicios"
+                    Clicked="servicios_Clicked"
+                    
+                    />
+
+                <Image  
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Source="estudio.jpg"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    />
+
+                <Button
+                    FontFamily="Lato"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="Sobre nosotros"
+                    Clicked="Button_Clicked"
+                    
+                    />
             </Grid>
-            
         </VerticalStackLayout>
     </ScrollView>
 
