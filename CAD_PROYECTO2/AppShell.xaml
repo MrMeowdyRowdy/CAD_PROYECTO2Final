@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell Title="CAD STUDIO"
+    x:Class="CAD_PROYECTO2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CAD_PROYECTO2"
+    xmlns:views="clr-namespace:CAD_PROYECTO2.Views"
+    xmlns:anonimo="clr-namespace:CAD_PROYECTO2.Anonimo"
+    Shell.TabBarIsVisible="False"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent Shell.FlyoutBehavior="Disabled" FlyoutItemIsVisible="False"
+        Title="Reservas"
+        ContentTemplate="{DataTemplate anonimo:AMainPage}"
+        />
+
+    <ShellContent
+        Title="Sobre Nosotros" Shell.FlyoutBehavior="Disabled" FlyoutItemIsVisible="False" 
+        ContentTemplate="{DataTemplate views:LoginPage}" 
+        />
+
+    <FlyoutItem Route="DashBoardPage"  FlyoutDisplayOptions="AsMultipleItems" >
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Servicios"
+        ContentTemplate="{DataTemplate views:Servicios}"
+         />
+    <ShellContent
+        Title="Sobre Nosotros"
+        ContentTemplate="{DataTemplate views:SobreNosotros}"
+        />
+    <ShellContent
+        Title="Reservas"
+        ContentTemplate="{DataTemplate views:ReservasPage}"
+        />
+     
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter >
+        <StackLayout Padding="20">
+            <Button Text="Sing Out" Command="{Binding SignOutCommand}"/>
+        </StackLayout>
+    </Shell.FlyoutFooter>
+
+
+</Shell>

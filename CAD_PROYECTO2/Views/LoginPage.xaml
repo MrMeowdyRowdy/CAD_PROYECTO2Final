@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAD_PROYECTO2.Views.LoginPage"
+             Title="LoginPage"
+             Shell.FlyoutBehavior="Disabled" 
+             Shell.FlyoutItemIsVisible="False">
+    <ScrollView>
+    <VerticalStackLayout
+        Spacing="25" 
+        Padding="30.0"
+        VerticalOptions="Center">
+
+        <Image Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\logincamara.jpg"
+               HeightRequest="200"
+               WidthRequest="200"/>
+
+            <VerticalStackLayout Spacing="20">
+
+                <Label  Text="Welcome" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                <Label  Text="Ingrese con sus credenciales" FontSize="15" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                <Label   x:Name="Advertencia" TextColor="PaleVioletRed"/>
+                <StackLayout Orientation="Horizontal" >
+
+                    <Frame   ZIndex="1" HasShadow="True" HorizontalOptions="Start"  BorderColor="White"  HeightRequest="58"  WidthRequest="58" CornerRadius="26">
+                        <Image Source="user.png" 
+                           WidthRequest="20" HeightRequest="20"/>
+                    </Frame>
+
+                    <Frame  HeightRequest="45"  HasShadow="True" Padding="0" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                        <Entry  x:Name="Nombre"  VerticalOptions="Center" Placeholder="UserName" Keyboard="Email"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" >
+
+                    <Frame   ZIndex="1" HasShadow="True" HorizontalOptions="Start"  BorderColor="White"  HeightRequest="58"  WidthRequest="58" CornerRadius="26">
+                        <Image Source="lock.png" 
+                           WidthRequest="20" HeightRequest="20"/>
+                    </Frame>
+
+                    <Frame  HeightRequest="45"  HasShadow="True" Padding="0" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                        <Entry  x:Name="Contraseña" VerticalOptions="Center" Placeholder="Password" IsPassword="True" Keyboard="Email"/>
+                    </Frame>
+                </StackLayout>
+
+                <Button Text="Sign In" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="100" CornerRadius="20" Clicked="LoginButton_Clicked"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="Si no tiene una cuenta registrese "/>
+                <Button Text="Aqui" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="100" CornerRadius="20" Clicked="Registro_Button"/>
+        
+        </HorizontalStackLayout>
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

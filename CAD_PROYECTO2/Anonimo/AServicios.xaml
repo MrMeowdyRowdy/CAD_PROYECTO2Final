@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAD_PROYECTO2.Anonimo.AServicios"
+             >
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior NavigationPage.BackButtonTitle="Volver"/>
+    </Shell.BackButtonBehavior>
+    <ScrollView>
+    <VerticalStackLayout Spacing="100" >
+        <HorizontalStackLayout Spacing="200" HorizontalOptions="CenterAndExpand">
+            <Image
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\CAD.S1.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            
+            <Label 
+            Text="Servicio 1 "
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+            
+            <Button Text="See More"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="SeeMore_Clicked" />
+            
+        </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="200"  HorizontalOptions="CenterAndExpand">
+            <Image
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\cad.s2.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Start" />
+
+            <Label 
+            Text="Servicio 2 "
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+
+            <Button Text="See More"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Clicked="SeeMore2_Clicked" />
+
+             </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="200"  HorizontalOptions="CenterAndExpand">
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Start" />
+
+            <Label 
+            Text="Servicio 3 "
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            AnchorX="200" />
+
+            <Button Text="See More"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Clicked="SeeMore3_Clicked" />
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

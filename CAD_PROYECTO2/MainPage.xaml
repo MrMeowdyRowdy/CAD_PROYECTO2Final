@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAD_PROYECTO2.MainPage"
+             Title="Main Page">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Label
+                Text="Photografy Studio"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                />
+
+            <Image
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
+                HeightRequest="400"
+                HorizontalOptions="Center" 
+                SemanticProperties.HeadingLevel="Level2"/>
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            
+                
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="2">
+                
+                <Image 
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
+                HeightRequest="100"
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                       />
+                <Button 
+                        Text="Ver Servicio 1"
+                    Clicked="SeeMore1_Clicked" 
+                        VerticalOptions="End"/>
+
+                <Image  Grid.Column="1"
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
+                HeightRequest="100"
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                       />
+                <Button Grid.Column="1"
+                    Text="Ver servicio 2"
+                    VerticalOptions="End"
+                    Clicked="SeeMore2_Clicked" />
+                
+                <Image  Grid.Column="2"
+                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\Estudio.jpg"
+                HeightRequest="100"
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                       />
+                <Button Grid.Column="2"
+                    Text="Ver servicio 2"
+                    VerticalOptions="End"
+                    Clicked="SeeMore3_Clicked" />
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
