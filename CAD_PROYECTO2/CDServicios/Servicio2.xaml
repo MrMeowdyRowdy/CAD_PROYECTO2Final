@@ -7,17 +7,17 @@
             <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
-            FontSize="32"
+            FontSize="33"
             HorizontalOptions="Center"/>
             <Image
                 Source="cads3.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="400"
+                HeightRequest="401"
                 HorizontalOptions="Center" />
             <Label 
-            Text="Los mejore momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
+            Text="Los mejores momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
-            FontSize="18"/>
+            FontSize="19"/>
 
         <Button Text="Comentarios"
                     HorizontalOptions="End"
