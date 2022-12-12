@@ -4,16 +4,20 @@
              Title="Servicio 2"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
-    <VerticalStackLayout>
+    <VerticalStackLayout Margin="30" Spacing="30">
+        <Label
+            Text="Servicio 2: Fotografia Familiar"
+            FontAttributes="Bold"
+            FontSize="32"
+            HorizontalOptions="Center"/>
         <Image
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\cad.s2.jpg"
+                Source="cads3.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Start" />
-         <Label 
-            Text="Welcome to .NET MAUI!"
+                HorizontalOptions="Center" />
+        <Label 
+            Text="Los mejore momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-         
+            FontSize="18"/>
     </VerticalStackLayout>
 </ContentPage>
