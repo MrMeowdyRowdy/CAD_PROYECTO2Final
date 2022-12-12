@@ -23,6 +23,7 @@ namespace CAD_PROYECTO2.Models
             return true;
         }
 
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 

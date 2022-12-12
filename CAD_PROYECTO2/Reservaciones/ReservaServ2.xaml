@@ -4,12 +4,12 @@
              x:Class="CAD_PROYECTO2.Reservaciones.ReservaServ2"
              xmlns:control ="clr-namespace:CAD_PROYECTO2.Controles"
              xmlns:cal="clr-namespace:CAD_PROYECTO2.Views"
-             Title="ReservaServ2">
+             Title="Reserva Servicio2">
     <VerticalStackLayout Spacing="50">
 
-        <Editor x:Name="Nombre" Placeholder="Nombre" HorizontalTextAlignment="Center"/>
+        <Editor x:Name="Nombre" Placeholder=" Escriba el nombre de quien va a reservar" HorizontalTextAlignment="Center"/>
 
-        <Editor x:Name="Apellido" Placeholder="Apellido" HorizontalTextAlignment="Center"/>
+        <Editor x:Name="Apellido" Placeholder="Escriba el apellido de quien va a reservar" HorizontalTextAlignment="Center"/>
 
         <control:DropDownButton DisplayName="Titulo" x:Name="dropdownControl" height="250" HorizontalOptions="Center" AnchorX="250">
             <control:DropDownButton.ItemTemplate>
