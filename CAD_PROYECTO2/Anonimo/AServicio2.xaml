@@ -1,23 +1,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Anonimo.AServicio2"
-             Title="Servicio 2"
+             Title="Fotografia Familiar"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
     <VerticalStackLayout Margin="30" Spacing="30">
         <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
-            FontSize="32"
+            FontSize="33"
             HorizontalOptions="Center"/>
         <Image
                 Source="cads3.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="400"
+                HeightRequest="401"
                 HorizontalOptions="Center" />
         <Label 
             Text="Los mejore momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
-            FontSize="18"/>
+            FontSize="19"/>
     </VerticalStackLayout>
 </ContentPage>

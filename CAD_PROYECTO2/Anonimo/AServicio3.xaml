@@ -9,16 +9,16 @@
         <Label
             Text="Servicio 3: Fotografia de bebes"
             FontAttributes="Bold"
-            FontSize="32"
+            FontSize="33"
             HorizontalOptions="Center"/>
         <Image
                 Source="bebess.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="400"
+                HeightRequest="401"
                 HorizontalOptions="Center" />
         <Label 
             Text="Si estas en esta pagina, debes estar buscando hacer los primeros retrato de tu bebe recien nacido y lo primero que me gustaria decir es: felicidades, disfruta mucho la ternura de la nueva vida. Las fotos de recien nacidos son mas adecuadas para bebes de hasta 3 semanas."
             VerticalOptions="Center" 
-            FontSize="18"/>
+            FontSize="19"/>
     </VerticalStackLayout>
 </ContentPage>
