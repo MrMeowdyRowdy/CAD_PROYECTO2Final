@@ -5,6 +5,5 @@ public partial class AServicio1 : ContentPage
 	public AServicio1()
 	{
 		InitializeComponent();
-      
     } 
 } 

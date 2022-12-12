@@ -3,7 +3,7 @@
              x:Class="CAD_PROYECTO2.CDServicios.Servicio2"
              Title="Fotografia Familiar">
 
-    <VerticalStackLayout Margin="30" Spacing="30">
+    <VerticalStackLayout Margin="50" Spacing="30">
         <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"

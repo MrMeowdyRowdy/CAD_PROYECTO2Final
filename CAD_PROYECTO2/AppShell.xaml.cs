@@ -29,7 +29,7 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         Routing.RegisterRoute(nameof(Views.LoginPage), typeof(LoginPage));
         Routing.RegisterRoute(nameof(Views.RegisterPage), typeof(RegisterPage));
-
+        Routing.RegisterRoute(nameof(Views.SobreNosotros), typeof(SobreNosotros));
         Routing.RegisterRoute(nameof(Anonimo.AMainPage), typeof(AMainPage));
         Routing.RegisterRoute(nameof(Anonimo.AServicios), typeof(AServicios));
         Routing.RegisterRoute(nameof(Anonimo.AServicio1), typeof(AServicio1));
