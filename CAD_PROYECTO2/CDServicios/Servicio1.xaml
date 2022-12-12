@@ -5,20 +5,21 @@
              Title="Servicio1">
     <VerticalStackLayout>
 
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="2" VerticalOptions="Fill">
-            
-            <Image
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\CAD.S1.png"
+        <Label
+            Text="Servicio 1: Fotografia Publicitaria"
+            FontAttributes="Bold"
+            FontSize="32"
+            HorizontalOptions="Center"/>
+        <Image
+                Source="cads2.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                HeightRequest="400"
                 HorizontalOptions="Center" />
-            <Label Grid.Column="2"
-            Text="Welcome to .NET MAUI!"
+        <Label 
+            Text="Toda empresa que tenga una estrategia agresiva de comercializacion y promocion, necesita una serie de fotografias idoneas para llegar a su publico objetivo"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-            
-        </Grid>
-        
+            FontSize="18"/>
+
         <Button Text="Comentarios"
                     HorizontalOptions="Start"
                     VerticalOptions="End"
