@@ -2,14 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.CDServicios.Servicio2"
              Title="Fotografia Familiar">
-
-    <VerticalStackLayout Margin="50" Spacing="30">
-        <Label
+    <ScrollView>
+        <VerticalStackLayout Margin="50" Spacing="30">
+            <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
             FontSize="33"
             HorizontalOptions="Center"/>
-        <Image
+            <Image
                 Source="cads3.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="401"
@@ -19,23 +19,24 @@
             VerticalOptions="Center" 
             FontSize="19"/>
 
-        <HorizontalStackLayout Spacing="30">
-            <Button Text="Comentarios"
+            <HorizontalStackLayout Spacing="30">
+                <Button Text="Comentarios"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
                     HorizontalOptions="Start"
                     Clicked="Comentarios2_Clicked" />
-            <Button Text="Ver Comentarios"
+                <Button Text="Ver Comentarios"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
                     HorizontalOptions="StartAndExpand"
                     Clicked="Volver_Clicked" />
 
-            <Button Text="Reservar"
+                <Button Text="Reservar"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
                     HorizontalOptions="StartAndExpand"
                     Clicked="ReservacionesClick" />
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

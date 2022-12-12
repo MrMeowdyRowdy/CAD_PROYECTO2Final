@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.CDServicios.Servicio3"
              Title="Servicio 3">
+    <ScrollView> 
     <VerticalStackLayout Margin="50" Spacing="30">
         <Label
             Text="Servicio 3: Fotografia de bebes"
@@ -37,4 +38,5 @@
                     Clicked="ReservacionesClick" />
         </HorizontalStackLayout>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

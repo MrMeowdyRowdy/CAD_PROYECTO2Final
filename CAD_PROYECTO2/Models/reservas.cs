@@ -17,7 +17,9 @@ namespace CAD_PROYECTO2.Models
             string reser = "";
             foreach(var reserva in Res)
             {
-                reser += "Nombre: "+reserva.Nombre+" Apellido: "+reserva.Apellido+ " Servicio: "+reserva.servicio+ "\n";
+                reser += "*************************************" + "\n" + "Nombre: " + reserva.Nombre +"\n"
+                      +" Apellido: "+reserva.Apellido+ "\n"
+                      +" Servicio Seleccionado: " +reserva.servicio+ "\n";
             }
             return reser;
         }

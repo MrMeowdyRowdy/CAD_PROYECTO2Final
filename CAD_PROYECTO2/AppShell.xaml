@@ -28,15 +28,11 @@
         Title="Servicios"
         ContentTemplate="{DataTemplate views:Servicios}"
          />
-    <ShellContent
+        <ShellContent
         Title="Sobre Nosotros"
         ContentTemplate="{DataTemplate views:SobreNosotros}"
         />
-    <ShellContent
-        Title="Reservas"
-        ContentTemplate="{DataTemplate views:ReservasPage}"
-        />
-     
+
     </FlyoutItem>
 
     <Shell.FlyoutFooter >

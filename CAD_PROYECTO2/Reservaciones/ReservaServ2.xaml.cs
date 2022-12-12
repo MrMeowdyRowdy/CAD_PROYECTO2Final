@@ -23,7 +23,7 @@ public partial class ReservaServ2 : ContentPage
         Reserva reserva = new Reserva(
             Nombre.Text,
             Apellido.Text,
-            dropdownControl.DisplayName
+            "Servicio 2"
             );
         reservas.Loadsuarios(reserva);
         await Shell.Current.GoToAsync(nameof(Views.Reservas));
