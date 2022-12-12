@@ -38,4 +38,9 @@ public partial class AppShell : Shell
 
         Routing.RegisterRoute(nameof(Views.Reservas), typeof(Reservas));
     }
+
+    private async void Out_Button(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Anonimo.AMainPage));
+    }
 }
