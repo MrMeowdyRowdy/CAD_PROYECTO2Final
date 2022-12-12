@@ -107,6 +107,9 @@
 	  <MauiXaml Update="Anonimo\AServicios.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Anonimo\ASobreNosotros.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="CDServicios\Servicio2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

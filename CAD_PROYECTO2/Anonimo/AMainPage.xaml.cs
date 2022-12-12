@@ -11,7 +11,7 @@ public partial class AMainPage : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(Views.SobreNosotros));
+        await Shell.Current.GoToAsync(nameof(Anonimo.ASobreNosotros));
     }
 
 

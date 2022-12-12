@@ -9,11 +9,15 @@
                 Text="{Binding Text}"
                 HeightRequest="100" />
 
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+        <Grid ColumnDefinitions="*,*,*" ColumnSpacing="2">
             <Button Text="Guardar Comentario"
-                    Clicked="SaveButton_Clicked" />
+                    Clicked="SaveButton3_Clicked" />
 
-            <Button Grid.Column="2"
+            <Button  Grid.Column="1" 
+                Text="Eliminar Comentario"
+                    Clicked="DeleteButton_Clicked" />
+
+            <Button Grid.Column="3"
                     Text="Volver"
                     Clicked="Volver_Clicked" />
         </Grid>
