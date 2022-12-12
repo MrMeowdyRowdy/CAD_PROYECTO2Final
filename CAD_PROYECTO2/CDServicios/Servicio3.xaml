@@ -18,13 +18,18 @@
             Text="Si estas en esta pagina, debes estar buscando hacer los primeros retrato de tu bebe recien nacido y lo primero que me gustaria decir es: felicidades, disfruta mucho la ternura de la nueva vida. Las fotos de recien nacidos son mas adecuadas para bebes de hasta 3 semanas."
             VerticalOptions="Center" 
             FontSize="19"/>
-        <Button Text="Comentarios"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
+       
+        <HorizontalStackLayout Spacing="30">
+            <Button Text="Comentarios"
+                    FontFamily="Lato"
+                    FontAttributes="Bold,Italic"
+                    HorizontalOptions="Start"
                     Clicked="Comentarios3_Clicked" />
-        <Button Text="Volver"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
+            <Button Text="Volver"
+                    FontFamily="Lato"
+                    FontAttributes="Bold,Italic"
+                    HorizontalOptions="StartAndExpand"
                     Clicked="Volver_Clicked" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
