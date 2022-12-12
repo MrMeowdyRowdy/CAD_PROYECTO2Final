@@ -11,7 +11,7 @@
             FontSize="32"
             HorizontalOptions="Center"/>
         <Image
-                Source="cads2.png"
+                Source="cads1.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="400"
                 HorizontalOptions="Center" />
@@ -19,7 +19,6 @@
             Text="Toda empresa que tenga una estrategia agresiva de comercializacion y promocion, necesita una serie de fotografias idoneas para llegar a su publico objetivo"
             VerticalOptions="Center" 
             FontSize="18"/>
-
         <Button Text="Comentarios"
                     HorizontalOptions="Start"
                     VerticalOptions="End"

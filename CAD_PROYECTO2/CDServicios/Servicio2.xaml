@@ -4,17 +4,17 @@
              Title="Fotografia Familiar">
 
     <VerticalStackLayout Margin="30" Spacing="30">
-            <Label
+        <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
             FontSize="32"
             HorizontalOptions="Center"/>
-            <Image
-                Source="cads3.png"
+        <Image
+                Source="cads3.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="400"
                 HorizontalOptions="Center" />
-            <Label 
+        <Label 
             Text="Los mejore momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
             FontSize="18"/>
