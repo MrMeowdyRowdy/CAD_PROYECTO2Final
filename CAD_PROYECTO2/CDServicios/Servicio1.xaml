@@ -1,25 +1,27 @@
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.CDServicios.Servicio1"
-             Title="Servicio1">
-    <VerticalStackLayout>
+             Title="Fotografía Publicitaria">
 
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="2" VerticalOptions="Fill">
-            
-            <Image
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\CAD.S1.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-            <Label Grid.Column="2"
-            Text="Welcome to .NET MAUI!"
+    <VerticalStackLayout Margin="30" Spacing="30">
+            <Label
+            Text="Servicio 1: Fotografía Publicitaria"
+            FontAttributes="Bold"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-            
-        </Grid>
-        
-        <Button Text="Comentarios"
+            HorizontalOptions="Center" 
+            FontSize="32"/>
+            <Image
+                Source="publicitariass.jpg"
+                SemanticProperties.Description="Fotografía publicitaria"
+                HeightRequest="400"
+                HorizontalOptions="Center" />
+            <Label
+            Text="Toda empresa que tenga una estrategia agresiva de comercialización y promoción, necesita una serie de fotografías idóneas para llegar a su público objetivo. La empresa que desee éxito en sus ventas debe acompañar cada producto o servicio de una buena fotografía que refleje la esencia y el valor agregado que la empresa brinda al cliente, fotografías que no muestren justo lo que el cliente recibirá."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="18"/>
+
+            <Button Text="Comentarios"
                     HorizontalOptions="Start"
                     VerticalOptions="End"
                     Clicked="Comentarios_Clicked" />
