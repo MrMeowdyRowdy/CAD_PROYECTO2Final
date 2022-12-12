@@ -2,6 +2,7 @@
 using CAD_PROYECTO2.CDServicios;
 using CAD_PROYECTO2.Comentarios;
 using CAD_PROYECTO2.Models;
+using CAD_PROYECTO2.Reservaciones;
 using CAD_PROYECTO2.Views;
 
 namespace CAD_PROYECTO2;
@@ -36,7 +37,9 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(Anonimo.AServicio2), typeof(AServicio2));
         Routing.RegisterRoute(nameof(Anonimo.AServicio3), typeof(AServicio3));
         Routing.RegisterRoute(nameof(Anonimo.ASobreNosotros), typeof(ASobreNosotros));
-
+        Routing.RegisterRoute(nameof(Reservaciones.ReservaServ1), typeof(ReservaServ1));
+        Routing.RegisterRoute(nameof(Reservaciones.ReservaServ2), typeof(ReservaServ2));
+        Routing.RegisterRoute(nameof(Reservaciones.ReservaServ3), typeof(ReservaServ3));
         Routing.RegisterRoute(nameof(Views.Reservas), typeof(Reservas));
     }
 
