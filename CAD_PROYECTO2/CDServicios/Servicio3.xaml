@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.CDServicios.Servicio3"
-             Title="Servicio 3">
+             Title="Fotografia de bebes">
     <VerticalStackLayout>
         <Label
             Text="Servicio 3: Fotografia de bebes"
             FontAttributes="Bold"
-            FontSize="32"
+            FontSize="33"
             HorizontalOptions="Center"/>
         <Image
                 Source="bebess.jpg"
@@ -17,7 +17,7 @@
         <Label 
             Text="Si estas en esta pagina, debes estar buscando hacer los primeros retrato de tu bebe recien nacido y lo primero que me gustaria decir es: felicidades, disfruta mucho la ternura de la nueva vida. Las fotos de recien nacidos son mas adecuadas para bebes de hasta 3 semanas."
             VerticalOptions="Center" 
-            FontSize="18"/>
+            FontSize="19"/>
         <Button Text="Comentarios"
                     HorizontalOptions="End"
                     VerticalOptions="End"
