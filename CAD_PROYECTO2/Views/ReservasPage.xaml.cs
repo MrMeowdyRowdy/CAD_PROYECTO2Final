@@ -24,6 +24,10 @@ public partial class ReservasPage : ContentPage
 			Apellido.Text,
 			dropdownControl.DisplayName 
 			);
+        reservas.Loadsuarios(reserva);
+        await Shell.Current.GoToAsync(nameof(Views.Reservas));
 
-	}
+
+
+    }
 }
