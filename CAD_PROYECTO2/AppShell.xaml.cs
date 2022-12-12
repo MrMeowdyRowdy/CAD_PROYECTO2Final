@@ -35,5 +35,7 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(Anonimo.AServicio1), typeof(AServicio1));
         Routing.RegisterRoute(nameof(Anonimo.AServicio2), typeof(AServicio2));
         Routing.RegisterRoute(nameof(Anonimo.AServicio3), typeof(AServicio3));
+
+        Routing.RegisterRoute(nameof(Views.Reservas), typeof(Reservas));
     }
 }

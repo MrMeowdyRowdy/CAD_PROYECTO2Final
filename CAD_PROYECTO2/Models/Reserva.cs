@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 namespace CAD_PROYECTO2.Models
 {
     
-    public class Reserva
+    public  class Reserva
     { 
         public String Nombre { get; set; }
         public String Apellido { get; set; }
         public String servicio { get; set; }
-        public DateTime date { get; set; }
 
         public Reserva(string nombre, string Apellido , string servicio)
         {
