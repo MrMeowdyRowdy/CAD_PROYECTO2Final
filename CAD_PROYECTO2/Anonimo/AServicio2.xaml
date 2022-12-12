@@ -16,7 +16,7 @@
                 HeightRequest="401"
                 HorizontalOptions="Center" />
         <Label 
-            Text="Los mejore momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
+            Text="Los mejores momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
             FontSize="19"/>
     </VerticalStackLayout>
