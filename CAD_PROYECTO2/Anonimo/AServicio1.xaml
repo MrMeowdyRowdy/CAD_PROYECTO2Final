@@ -12,7 +12,7 @@
             FontSize="32"
             HorizontalOptions="Center"/>
     <Image
-                Source="cads2.png"
+                Source="cads1.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="400"
                 HorizontalOptions="Center" />
