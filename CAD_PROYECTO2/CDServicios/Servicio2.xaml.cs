@@ -13,6 +13,6 @@ public partial class Servicio2 : ContentPage
 
     private async void Volver_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(Views.Servicios));
+        await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage2));
     }
 }

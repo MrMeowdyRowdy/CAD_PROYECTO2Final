@@ -25,7 +25,16 @@ public partial class ComentarioS2 : ContentPage
             File.WriteAllText(note.Filename, TextEditor.Text);
         await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage2));
     }
+    private async void DeleteButton_Clicked(object sender, EventArgs e)
+    {
+        if (BindingContext is Models.Note note)
+        {
+            if (File.Exists(note.Filename))
+                File.Delete(note.Filename);
+        }
 
+        await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage2));
+    }
     private void LoadNote2(string fileName)
     {
         Models.Note noteModel = new Models.Note();

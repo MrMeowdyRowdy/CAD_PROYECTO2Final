@@ -15,6 +15,6 @@ public partial class Servicio1 : ContentPage
 
 	private async void Volver_Clicked(object sender, EventArgs e)
 	{
-        await Shell.Current.GoToAsync(nameof(Views.Servicios));
+        await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage));
     }
 }

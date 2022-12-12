@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CAD_PROYECTO2.Views.SobreNosotros"
+             x:Class="CAD_PROYECTO2.Anonimo.ASobreNosotros"
              Title="Sobre Nosotros"
-             >
+             Shell.FlyoutBehavior="Disabled" 
+             Shell.FlyoutItemIsVisible="False">
     <ScrollView>
         <VerticalStackLayout Margin="50" Spacing="30">
             <Label 
@@ -59,5 +60,5 @@
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
-    
+
 </ContentPage>

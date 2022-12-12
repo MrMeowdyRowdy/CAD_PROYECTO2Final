@@ -19,14 +19,23 @@ public partial class ComentarioS3 : ContentPage
 
         LoadNote3(Path.Combine(appDataPath, randomFileName));
     }
-    private async void SaveButton_Clicked(object sender, EventArgs e)
+    private async void SaveButton3_Clicked(object sender, EventArgs e)
     {
         // Save the file.
         if (BindingContext is Models.Note note)
             File.WriteAllText(note.Filename, TextEditor.Text);
         await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage3));
     }
+    private async void DeleteButton_Clicked(object sender, EventArgs e)
+    {
+        if (BindingContext is Models.Note note)
+        {
+            if (File.Exists(note.Filename))
+                File.Delete(note.Filename);
+        }
 
+        await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage3));
+    }
     private void LoadNote3(string fileName)
     {
         Models.Note noteModel = new Models.Note();
