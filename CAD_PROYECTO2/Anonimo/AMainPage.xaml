@@ -7,7 +7,9 @@
              Shell.FlyoutItemIsVisible="False">
     
     <ContentPage.ToolbarItems >
-        <ToolbarItem Text="Login" Clicked="Add_Clicked" IconImageSource="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\icon usuario.png" />
+        <ToolbarItem Text="Log In" Clicked="Add_Clicked" IconImageSource="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\icon usuario.png" />
+
+        <ToolbarItem Text="Registrarse" Clicked="Registro_Button" IconImageSource="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\icon usuario.png" />
     </ContentPage.ToolbarItems>
 
     <ScrollView>

@@ -25,5 +25,10 @@ public partial class AMainPage : ContentPage
 	{
         await Shell.Current.GoToAsync(nameof(Views.LoginPage));
     }
+
+    private void Registro_Button(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(Views.RegisterPage));
+    }
 }
 
