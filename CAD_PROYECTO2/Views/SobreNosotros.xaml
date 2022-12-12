@@ -10,7 +10,8 @@
             FontSize="32"
             HorizontalOptions="Start" />
             <Image
-            Source="sn.jpg"/>
+            Source="sn.jpg"
+                HeightRequest="400"/>
             <Label 
             Text="JESENIA CALERO"
             FontSize="28"
@@ -31,6 +32,32 @@
             Text="Somos una empresa que tiene el compromiso de esforzarnos dia a dia para exceder las expectativas de nuestros clientes, con un alto estandar en calidad de servicio y profesionalismo. Nos encontramos estrategicamente ubicados en la zona Centro Norte del Distrito Metropolitano de Quito, en las calles Ulloa y Pedro Bedon, edifcio Kamay, segundo piso."
             FontSize="18"
             HorizontalOptions="Start" />
+            <VerticalStackLayout Spacing="10">
+                <Label 
+                    Text="Informacion de Contacto"
+                    FontSize="18"
+                    HorizontalOptions="Start" 
+                    FontAttributes="Bold"/>
+
+                <Label 
+                    Text="Direccion: Ulloa y Pedro Bedon - Edificio Kamay. Oficina 102 - 2do. piso"
+                    FontSize="18"
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="Quito - Ecuador"
+                    FontSize="18"
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="Telefono: (+593 9) 9 213 3378"
+                    FontSize="18"
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="E-mail: info@CAD.com.ec"
+                    FontSize="18"
+                    HorizontalOptions="Start" />
+
+
+            </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
     
