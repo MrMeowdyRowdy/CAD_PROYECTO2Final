@@ -30,6 +30,12 @@
                     FontAttributes="Bold,Italic"
                     HorizontalOptions="StartAndExpand"
                     Clicked="Volver_Clicked" />
+
+            <Button Text="Reservar"
+                    FontFamily="Lato"
+                    FontAttributes="Bold,Italic"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="ReservacionesClick" />
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

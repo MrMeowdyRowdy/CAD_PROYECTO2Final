@@ -89,6 +89,12 @@
 	  <Compile Update="Comentarios\AllNotesPage.xaml.cs">
 	    <DependentUpon>AllNotesPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Reservaciones\ReservaServ3.xaml.cs">
+	    <DependentUpon>ReservaServ3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Reservaciones\ReservaServ2.xaml.cs">
+	    <DependentUpon>ReservaServ2.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -141,6 +147,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controles\PickerControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Reservaciones\ReservaServ3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Reservaciones\ReservaServ2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Reservaciones\ReservaServ1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\CalendarView.xaml">
