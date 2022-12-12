@@ -5,20 +5,15 @@
              Title="Servicio1"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
-    <VerticalStackLayout>
-
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="2" VerticalOptions="Fill">
-
-            <Image
-                Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\CAD.S1.png"
+    <VerticalStackLayout Margin="30">
+        <Image
+                Source="publicitariass.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
-            <Label Grid.Column="2"
+        <Label Grid.Column="2"
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
-        </Grid>
     </VerticalStackLayout>
 </ContentPage>

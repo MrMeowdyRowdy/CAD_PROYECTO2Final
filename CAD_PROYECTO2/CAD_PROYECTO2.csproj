@@ -49,7 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bebess.jpg" />
+	  <None Remove="Resources\Images\familiarss.jpg" />
+	  <None Remove="Resources\Images\fotofondo.jpeg" />
 	  <None Remove="Resources\Images\lock.png" />
+	  <None Remove="Resources\Images\producto1.jpg" />
+	  <None Remove="Resources\Images\publicitariass.jpg" />
+	  <None Remove="Resources\Images\serv3.jpg" />
+	  <None Remove="Resources\Images\sobrenosotros.jpg" />
 	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>
 
