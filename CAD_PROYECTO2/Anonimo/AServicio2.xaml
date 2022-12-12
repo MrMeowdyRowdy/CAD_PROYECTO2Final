@@ -4,7 +4,7 @@
              Title="Servicio 2"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
-    <VerticalStackLayout Margin="30" Spacing="30">
+    <VerticalStackLayout Margin="50" Spacing="30">
         <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"

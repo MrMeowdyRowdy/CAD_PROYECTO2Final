@@ -18,7 +18,7 @@ public partial class MainPage : ContentPage
 
     private async void servicios_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(Anonimo.AServicios));
+        await Shell.Current.GoToAsync(nameof(Views.Servicios));
     }
 
 }
