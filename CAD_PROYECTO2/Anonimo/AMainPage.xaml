@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Anonimo.AMainPage"
-             Title="Pagina Principal">
+             Title="Pagina Principal"
+             Shell.FlyoutBehavior="Disabled" 
+             Shell.FlyoutItemIsVisible="False">
     
     <ContentPage.ToolbarItems >
         <ToolbarItem Text="Login" Clicked="Add_Clicked" IconImageSource="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\icon usuario.png" />
