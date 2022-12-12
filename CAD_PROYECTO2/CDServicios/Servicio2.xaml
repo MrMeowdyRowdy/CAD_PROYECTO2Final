@@ -4,13 +4,13 @@
              Title="Fotografia Familiar">
 
     <VerticalStackLayout Margin="30" Spacing="30">
-            <Label
+        <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
             FontSize="33"
             HorizontalOptions="Center"/>
-            <Image
-                Source="cads3.png"
+        <Image
+                Source="cads3.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="401"
                 HorizontalOptions="Center" />
