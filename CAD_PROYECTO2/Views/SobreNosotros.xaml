@@ -3,14 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Views.SobreNosotros"
              Title="SobreNosotros">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button Text="Volver"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"
-                    Clicked="voler_Boton" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Margin="50" Spacing="30">
+            <Label 
+            Text="Datos de la Fotografa"
+            FontSize="32"
+            HorizontalOptions="Start" />
+            <Image
+            Source="sn.jpg"/>
+            <Label 
+            Text="JESENIA CALERO"
+            FontSize="28"
+            HorizontalOptions="Start" />
+            <Label 
+            Text="Diseñadora - Fotografa"
+            FontSize="20"
+            HorizontalOptions="Start" />
+            <Label 
+            Text="De formacion Diseñadora Grafica, Web, Publicista y Animadora Digital. De pasion fotografa especializada en retrato de recién nacidos, niños, jóvenes, familias y adultos. Amo lo que hago como docente universitaria con mas de 12 años de experiencia en el area de la comunicacion en las carreras de Diseño, Periodismo, y Multimedia. Hoy por hoy apasionada de la fotografia, me he adueñado de esta maravillosa pasion."
+            FontSize="18"
+            HorizontalOptions="Start" />
+            <Label 
+            Text="¿Quienes Somos?"
+            FontSize="32"
+            HorizontalOptions="Start" />
+            <Label 
+            Text="Somos una empresa que tiene el compromiso de esforzarnos dia a dia para exceder las expectativas de nuestros clientes, con un alto estandar en calidad de servicio y profesionalismo. Nos encontramos estrategicamente ubicados en la zona Centro Norte del Distrito Metropolitano de Quito, en las calles Ulloa y Pedro Bedon, edifcio Kamay, segundo piso."
+            FontSize="18"
+            HorizontalOptions="Start" />
+        </VerticalStackLayout>
+    </ScrollView>
+    
 </ContentPage>
