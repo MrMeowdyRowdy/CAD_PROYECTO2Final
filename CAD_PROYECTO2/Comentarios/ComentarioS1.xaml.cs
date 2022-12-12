@@ -27,6 +27,16 @@ string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
          await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage));
     }
 
+    private async void DeleteButton_Clicked(object sender,EventArgs e)
+    {
+        if (BindingContext is Models.Note note)
+        {
+            if (File.Exists(note.Filename))
+                File.Delete(note.Filename);
+        }
+          
+        await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage));
+    }
     private void LoadNote(string fileName)
     {
         Models.Note noteModel = new Models.Note();
