@@ -11,7 +11,10 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
         Usuarios.Loadsuarios(new Usuario("Pablo", "12345"));
-        Usuarios.Loadsuarios(new Usuario("Gabo", "123"));
+        Usuarios.Loadsuarios(new Usuario("Ana", "1812"));
+        Usuarios.Loadsuarios(new Usuario("Dennis","2803"));
+        Usuarios.Loadsuarios(new Usuario("Mateo", "0302"));
+
 
     }
 
@@ -23,7 +26,7 @@ public partial class LoginPage : ContentPage
         }
         else
         {
-            Advertencia.Text = "Usuario no Registrado o Credenciales Incorrectas";
+            Advertencia.Text = "Usuario No Registrado o Credenciales Incorrectas";
         }
             
        
