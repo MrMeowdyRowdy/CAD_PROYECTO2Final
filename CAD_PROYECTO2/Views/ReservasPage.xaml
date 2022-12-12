@@ -4,7 +4,7 @@
              xmlns:control ="clr-namespace:CAD_PROYECTO2.Controles"
              xmlns:cal="clr-namespace:CAD_PROYECTO2.Views"
              x:Class="CAD_PROYECTO2.Views.ReservasPage"
-             Title="ReservasPage"
+             Title="Pagina de Reserva"
              >
     
     <VerticalStackLayout Spacing="50">
