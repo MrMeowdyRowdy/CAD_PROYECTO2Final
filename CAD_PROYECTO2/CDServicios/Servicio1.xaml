@@ -2,23 +2,24 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.CDServicios.Servicio1"
-             Title="Servicio1">
+             Title="Fotografia Publicitaria">
     <VerticalStackLayout>
 
         <Label
             Text="Servicio 1: Fotografia Publicitaria"
             FontAttributes="Bold"
-            FontSize="32"
+            FontSize="33"
             HorizontalOptions="Center"/>
         <Image
                 Source="cads1.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="400"
+                HeightRequest="401"
                 HorizontalOptions="Center" />
         <Label 
             Text="Toda empresa que tenga una estrategia agresiva de comercializacion y promocion, necesita una serie de fotografias idoneas para llegar a su publico objetivo"
             VerticalOptions="Center" 
             FontSize="18"/>
+
         <Button Text="Comentarios"
                     HorizontalOptions="Start"
                     VerticalOptions="End"
