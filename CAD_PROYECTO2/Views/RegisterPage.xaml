@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Views.RegisterPage"
-             Title="RegisterPage"
+             Title="Registrarse"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
     <ScrollView>
@@ -11,13 +11,13 @@
         Padding="30.0"
         VerticalOptions="Center">
 
-            <Image Source="C:\Users\59398\Desktop\tareas U\CAD_PROYECTO2\CAD_PROYECTO2\Resources\logincamara.jpg"
+            <Image Source="logincamara.jpg"
                HeightRequest="200"
                WidthRequest="200"/>
 
             <VerticalStackLayout Spacing="20">
 
-                <Label  Text="Welcome" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                <Label  Text="Bienvenido" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center"/>
                 <Label  Text="Ingrese su información para el Registro" FontSize="15" TextColor="Gray" HorizontalTextAlignment="Center"/>
                 <Label   x:Name="Advertencia" TextColor="PaleVioletRed"/>
                 <StackLayout Orientation="Horizontal" >
@@ -28,7 +28,7 @@
                     </Frame>
 
                     <Frame  HeightRequest="45"  HasShadow="True" Padding="0" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                        <Entry  x:Name="Nombre"  VerticalOptions="Center" Placeholder="UserName" />
+                        <Entry  x:Name="Nombre"  VerticalOptions="Center" Placeholder="Nombre de usuario" />
                     </Frame>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
@@ -39,7 +39,7 @@
                     </Frame>
 
                     <Frame  HeightRequest="45"  HasShadow="True" Padding="0" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                        <Entry  x:Name="Email" VerticalOptions="Center" Placeholder="Email"  Keyboard="Email"/>
+                        <Entry  x:Name="Email" VerticalOptions="Center" Placeholder="Correo Electronico"  Keyboard="Email"/>
                     </Frame>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
@@ -50,11 +50,11 @@
                     </Frame>
 
                     <Frame  HeightRequest="45"  HasShadow="True" Padding="0" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                        <Entry  x:Name="Contraseña" VerticalOptions="Center" Placeholder="Password" IsPassword="True" />
+                        <Entry  x:Name="Contraseña" VerticalOptions="Center" Placeholder="Contraseña" IsPassword="True" />
                     </Frame>
                 </StackLayout>
 
-                <Button Text="Sign In" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="100" CornerRadius="20" Clicked="Register_Clicked"/>
+                <Button Text="Registrarse" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="100" CornerRadius="20" Clicked="Register_Clicked"/>
             </VerticalStackLayout>
 
         </VerticalStackLayout>
