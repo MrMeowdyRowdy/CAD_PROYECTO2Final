@@ -13,7 +13,7 @@
             <Button Text="Guardar Comentario"
                     Clicked="SaveButton_Clicked" />
 
-            <Button  Grid.Column="2" 
+            <Button  Grid.Column="1" 
                 Text="Eliminar Comentario"
                     Clicked="DeleteButton_Clicked" />
 
