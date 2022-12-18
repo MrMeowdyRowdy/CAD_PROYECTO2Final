@@ -4,20 +4,22 @@
              Title="Fotografia Familiar"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
-    <VerticalStackLayout Margin="50" Spacing="30">
-        <Label
+    <ScrollView>
+        <VerticalStackLayout Margin="50" Spacing="30">
+            <Label
             Text="Servicio 2: Fotografia Familiar"
             FontAttributes="Bold"
             FontSize="33"
             HorizontalOptions="Center"/>
-        <Image
+            <Image
                 Source="cads3.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="401"
                 HorizontalOptions="Center" />
-        <Label 
+            <Label 
             Text="Los mejores momentos se pasan en familia. En conjunto con nuestro equipo fotografico, crearemos recuerdo inolvidables para padres y su familia "
             VerticalOptions="Center" 
             FontSize="19"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

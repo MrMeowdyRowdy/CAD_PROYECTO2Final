@@ -44,7 +44,7 @@
                     </Frame>
                 </StackLayout>
 
-                <Button Text="Inicial Sesion" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="250" CornerRadius="20" Clicked="LoginButton_Clicked"/>
+                <Button Text="Iniciar Sesion" BackgroundColor="#0792ef" HorizontalOptions="Center" WidthRequest="250" CornerRadius="20" Clicked="LoginButton_Clicked"/>
             </VerticalStackLayout>
             <VerticalStackLayout Spacing="15">
                 <Label Text="Si no tiene una cuenta registrese " HorizontalOptions="Center"/>
