@@ -5,6 +5,7 @@
              Title="Fotografia Publicitaria"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
+    <ScrollView> 
     <VerticalStackLayout Margin="50" Spacing="30">
     <Label
             Text="Servicio 1: Fotografia Publicitaria"
@@ -21,4 +22,5 @@
             VerticalOptions="Center" 
             FontSize="19"/>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

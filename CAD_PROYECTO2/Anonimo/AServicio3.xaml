@@ -5,20 +5,23 @@
              Title="Fotografia de bebes"
              Shell.FlyoutBehavior="Disabled" 
              Shell.FlyoutItemIsVisible="False">
-    <VerticalStackLayout Margin="50" Spacing="30">
-        <Label
+    <ScrollView>
+        <VerticalStackLayout Margin="50" Spacing="30">
+            <Label
             Text="Servicio 3: Fotografia de bebes"
             FontAttributes="Bold"
             FontSize="33"
             HorizontalOptions="Center"/>
-        <Image
+            <Image
                 Source="bebess.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="401"
                 HorizontalOptions="Center" />
-        <Label 
+            <Label 
             Text="Si estas en esta pagina, debes estar buscando hacer los primeros retrato de tu bebe recien nacido y lo primero que me gustaria decir es: felicidades, disfruta mucho la ternura de la nueva vida. Las fotos de recien nacidos son mas adecuadas para bebes de hasta 3 semanas."
             VerticalOptions="Center" 
             FontSize="19"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+   
 </ContentPage>

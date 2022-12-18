@@ -6,7 +6,7 @@
              x:Class="CAD_PROYECTO2.Views.ReservasPage"
              Title="Pagina de Reserva"
              >
-    
+    <ScrollView> 
     <VerticalStackLayout Spacing="50">
         
         <Editor x:Name="Nombre" Placeholder="Nombre" HorizontalTextAlignment="Center"/>
@@ -31,4 +31,6 @@
         <Button x:Name="SaveReserva" Text="Guardar reserva" Clicked="SaveButton_Clicked"/>
 
     </VerticalStackLayout>
+        
+    </ScrollView>
 </ContentPage>
