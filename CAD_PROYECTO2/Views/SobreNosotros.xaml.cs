@@ -7,9 +7,4 @@ public partial class SobreNosotros : ContentPage
 		InitializeComponent();
         
     }
-
-	private async void voler_Boton(object sender, EventArgs e)
-	{
-        
-    }
 }

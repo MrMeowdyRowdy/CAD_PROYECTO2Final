@@ -8,11 +8,6 @@ public partial class Servicio1 : ContentPage
       
     }
 
-	private async void Comentarios_Clicked(object sender, EventArgs e)
-	{
-        await Shell.Current.GoToAsync(nameof(Comentarios.ComentarioS1));
-    }
-
 	private async void Volver_Clicked(object sender, EventArgs e)
 	{
         await Shell.Current.GoToAsync(nameof(Comentarios.AllNotesPage));

@@ -3,23 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAD_PROYECTO2.Comentarios.ComentarioS2"
              Title="Comentarios Servicio 2">
-    <VerticalStackLayout Spacing="10" Margin="5">
-        <Editor x:Name="TextEditor"
-                Placeholder="Ingrese su comentario"
-                Text="{Binding Text}"
-                HeightRequest="100" />
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="SlateGray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-        <Grid ColumnDefinitions="*,*,*" ColumnSpacing="2">
-            <Button Text="Guardar Comentario"
-                    Clicked="SaveButton2_Clicked" />
+    <StackLayout Margin="10" Spacing="15">
+        <VerticalStackLayout>
+            <Label Text="Nombre de la Hamburguesa"  />
+            <Entry Text="{Binding NoteDetail.Titulo}" Placeholder="Titulo" />
+            <BoxView HeightRequest="0.8" Color="Gray" />
+        </VerticalStackLayout>
 
-            <Button  Grid.Column="1" 
-                Text="Eliminar Comentario"
-                    Clicked="DeleteButton_Clicked" />
 
-            <Button Grid.Column="3"
-                    Text="Volver"
-                    Clicked="Volver_Clicked" />
-        </Grid>
-    </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Descripcion de la Hamburguesa" />
+            <Entry  Text="{Binding NoteDetail.Text}" Placeholder="Comentario" />
+            <BoxView HeightRequest="0.8" Color="Gray" />
+        </VerticalStackLayout>
+
+        <Button Text="Guardar Nota" Command="{Binding AddUpdateNote2Command}"/>
+    </StackLayout>
 </ContentPage>

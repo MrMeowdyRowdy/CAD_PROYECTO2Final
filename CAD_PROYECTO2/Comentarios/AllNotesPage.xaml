@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:CAD_PROYECTO2.Models"
+             xmlns:viewModels="clr-namespace:CAD_PROYECTO2.ViewModels"
+             x:DataType="viewModels:AllNotesModel"
              x:Class="CAD_PROYECTO2.Comentarios.AllNotesPage"
              Title="Comentarios Servicio 1">
-    <CollectionView x:Name="notesCollection"
-                        ItemsSource="{Binding Notes}"
-                        Margin="20"
-                        SelectionMode="Single"
-                        SelectionChanged="notesCollection_SelectionChanged">
 
-        <!-- Designate how the collection of items are laid out -->
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
-        </CollectionView.ItemsLayout>
+    <ScrollView>
+        <StackLayout Margin="10" VerticalOptions="Fill">
+            <Label  Text="Lista de Comentarios" FontSize="28"/>
+            <Button Text="Añadir Comentario" Command="{Binding AddUpdateNoteCommand}" HorizontalOptions="End" />
+            <CollectionView VerticalOptions="Start" ItemsSource="{Binding Notes}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Note">
+                        <Frame Margin="10" Padding="30">
+                            <StackLayout >
+                                <VerticalStackLayout >
+                                    <Label Text="{Binding Titulo}" FontSize="18" FontAttributes="Bold" />
+                                    <Label Text="{Binding Text}" FontSize="16"/>
+                                </VerticalStackLayout>
+                                <!--<Label Text="{Binding ConQueso}" />-->
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:AllNotesModel}},Path=MostrarAccionCommand}"
+                                                          CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
 
-        <!-- Define the appearance of each item in the list -->
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout>
-                    <Label Text="{Binding Text}" FontSize="22"/>
-                    <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

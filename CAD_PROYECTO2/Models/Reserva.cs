@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace CAD_PROYECTO2.Models
 {
-    
-    public  class Reserva
+    [Table("Reservas")]
+    public class Reserva
     { 
         public String Nombre { get; set; }
         public String Apellido { get; set; }

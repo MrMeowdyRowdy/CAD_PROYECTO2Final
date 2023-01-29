@@ -23,14 +23,8 @@
                 <Button Text="Comentarios"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
-                    HorizontalOptions="Start"
-                    Clicked="Comentarios2_Clicked" />
-                <Button Text="Ver Comentarios"
-                    FontFamily="Lato"
-                    FontAttributes="Bold,Italic"
                     HorizontalOptions="StartAndExpand"
                     Clicked="Volver_Clicked" />
-
                 <Button Text="Reservar"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
