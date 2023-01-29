@@ -17,7 +17,7 @@ public partial class AppShell : Shell
 
         Routing.RegisterRoute(nameof(Views.Servicios), typeof(Servicios));
         
-        Routing.RegisterRoute(nameof(Models.AllNotes), typeof(AllNotes));
+
         Routing.RegisterRoute(nameof(Comentarios.ComentarioS1), typeof(ComentarioS1));
         Routing.RegisterRoute(nameof(Comentarios.ComentarioS2), typeof(ComentarioS2));
         Routing.RegisterRoute(nameof(Comentarios.ComentarioS3), typeof(ComentarioS3));

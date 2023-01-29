@@ -20,13 +20,8 @@
             Text="Toda empresa que tenga una estrategia agresiva de comercializacion y promocion, necesita una serie de fotografias idoneas para llegar a su publico objetivo"
             VerticalOptions="Center" 
             FontSize="18"/>
-        <HorizontalStackLayout Spacing="30">
-            <Button Text="Comentarios"
-                    FontFamily="Lato"
-                    FontAttributes="Bold,Italic"
-                    HorizontalOptions="Start"
-                    Clicked="Comentarios_Clicked" />
-            <Button Text="Ver Comentarios"
+            <HorizontalStackLayout Spacing="30">
+                <Button Text="Comentarios"
                     FontFamily="Lato"
                     FontAttributes="Bold,Italic"
                     HorizontalOptions="StartAndExpand"

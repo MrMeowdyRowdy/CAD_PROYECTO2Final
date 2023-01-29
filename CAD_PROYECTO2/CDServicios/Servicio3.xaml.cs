@@ -6,10 +6,6 @@ public partial class Servicio3 : ContentPage
 	{
 		InitializeComponent();
 	}
-    private async void Comentarios3_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync(nameof(Comentarios.ComentarioS3));
-    }
 
     private async void Volver_Clicked(object sender, EventArgs e)
     {
