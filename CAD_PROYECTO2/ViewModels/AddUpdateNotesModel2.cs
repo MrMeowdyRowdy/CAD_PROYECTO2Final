@@ -37,6 +37,7 @@ namespace CAD_PROYECTO2.ViewModels
                     Titulo = NoteDetail.Titulo,
                     Text = NoteDetail.Text,
                     serv = 2,
+                    Date = DateTime.Now,
                 });
             }
 

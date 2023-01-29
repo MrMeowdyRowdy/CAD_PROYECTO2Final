@@ -5,30 +5,43 @@
              xmlns:control ="clr-namespace:CAD_PROYECTO2.Controles"
              xmlns:cal="clr-namespace:CAD_PROYECTO2.Views"
              Title="Reserva Servicio 1">
-    <ScrollView>
-        <VerticalStackLayout Spacing="50">
 
-        <Editor x:Name="Nombre" Placeholder="Escriba el nombre de quien va a reservar"  HorizontalTextAlignment="Center"/>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="SlateGray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-        <Editor x:Name="Apellido" Placeholder="Escriba el apellido de quien va a reservar"  HorizontalTextAlignment="Center"/>
+    <StackLayout Margin="10" Spacing="15">
+        <VerticalStackLayout>
+            <Label Text="Nombre de la persona para la reservacion"  />
+            <Entry Text="{Binding ReservaDetail.Nombre}" Placeholder="Nombre" />
+            <BoxView HeightRequest="0.8" Color="Gray" />
+        </VerticalStackLayout>
 
-        <control:DropDownButton DisplayName="Titulo" x:Name="dropdownControl" height="250" HorizontalOptions="Center" AnchorX="250">
-            <control:DropDownButton.ItemTemplate>
-                <DataTemplate>
+        <StackLayout Margin="10" Spacing="15">
+            <VerticalStackLayout>
+                <Label Text="Apellido de la persona para la reservacion"  />
+                <Entry Text="{Binding ReservaDetail.Apellido}" Placeholder="Apellido" />
+                <BoxView HeightRequest="0.8" Color="Gray" />
+            </VerticalStackLayout>
 
-                    <Label  x:Name="NameServicio"
-                        Text="{Binding Titulo}"
-                          />
-                </DataTemplate>
+            <VerticalStackLayout>
+                <Label Text="Seleccione la fecha para la reserva"  />
+                <cal:CalendarView/>
+                <BoxView HeightRequest="0.8" Color="Gray" />
+            </VerticalStackLayout>
+        </StackLayout>
 
-            </control:DropDownButton.ItemTemplate>
+        <!--<VerticalStackLayout>
+            <Label Text="Con Queso?" />
+            <Entry Text="{Binding NoteDetail.ConQueso}" Placeholder="Si/No" />
+            <BoxView HeightRequest="0.8" Color="Gray" />
+        </VerticalStackLayout>-->
 
-        </control:DropDownButton>
-
-        <cal:CalendarView/>
-
-        <Button x:Name="SaveReserva" Text="Guardar reserva" Clicked="SaveButton_Clicked"/>
-
-    </VerticalStackLayout>
-    </ScrollView>
+        <Button Text="Guardar Nota" Command="{Binding AddUpdateReservaCommand}"/>
+    </StackLayout>
 </ContentPage>

@@ -15,6 +15,6 @@ public partial class Servicio1 : ContentPage
 
 	private async void ReservacionesClick(object sender, EventArgs e)
 	{
-        await Shell.Current.GoToAsync(nameof(Reservaciones.ReservaServ1));
+        await Shell.Current.GoToAsync(nameof(Reservaciones.AllReservasPage));
     }
 }
