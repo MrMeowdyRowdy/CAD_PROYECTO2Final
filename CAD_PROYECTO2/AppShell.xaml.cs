@@ -41,6 +41,9 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(Reservaciones.ReservaServ2), typeof(ReservaServ2));
         Routing.RegisterRoute(nameof(Reservaciones.ReservaServ3), typeof(ReservaServ3));
         Routing.RegisterRoute(nameof(Views.Reservas), typeof(Reservas));
+        Routing.RegisterRoute(nameof(Reservaciones.AllReservasPage), typeof(AllReservasPage));
+        Routing.RegisterRoute(nameof(Reservaciones.AllReservasPage2), typeof(AllReservasPage2));
+        Routing.RegisterRoute(nameof(Reservaciones.AllReservasPage3), typeof(AllReservasPage3));
     }
 
     private async void Out_Button(object sender, EventArgs e)

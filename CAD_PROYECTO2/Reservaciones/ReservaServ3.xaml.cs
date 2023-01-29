@@ -1,33 +1,12 @@
-using CAD_PROYECTO2.Models;
+using CAD_PROYECTO2.ViewModels;
 
 namespace CAD_PROYECTO2.Reservaciones;
 
 public partial class ReservaServ3 : ContentPage
 {
-	public ReservaServ3()
-	{
-        InitializeComponent();
-
-        var Items = new List<Items>();
-
-        Items.Add(new Items { Titulo = "Servicio 1" });
-        Items.Add(new Items { Titulo = "Servicio 2" });
-        Items.Add(new Items { Titulo = "Servicio 3" });
-
-        dropdownControl.ItemSource = Items;
-    }
-
-    private async void SaveButton_Clicked(object sender, EventArgs e)
+    public ReservaServ3(AddUpdateReservaModel3 viewmodel)
     {
-        Reserva reserva = new Reserva(
-            Nombre.Text,
-            Apellido.Text,
-            "Servicio 3"
-            );
-        reservas.Loadsuarios(reserva);
-        await Shell.Current.GoToAsync(nameof(Views.Reservas));
-
-
-
+        InitializeComponent();
+        this.BindingContext = viewmodel;
     }
 }

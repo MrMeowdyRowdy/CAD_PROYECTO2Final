@@ -3,27 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:CAD_PROYECTO2.Models"
              xmlns:viewModels="clr-namespace:CAD_PROYECTO2.ViewModels"
-             x:DataType="viewModels:AllNotesModel"
-             x:Class="CAD_PROYECTO2.Comentarios.AllNotesPage"
-             Title="Comentarios Servicio 1">
+             x:DataType="viewModels:AllReservasModel"
+             x:Class="CAD_PROYECTO2.Reservaciones.AllReservasPage"
+             Title="Reservas servicio 1">
+
 
     <ScrollView>
         <StackLayout Margin="10" VerticalOptions="Fill">
             <Label  Text="Lista de Comentarios" FontSize="28"/>
-            <Button Text="Añadir Comentario" Command="{Binding AddUpdateNoteCommand}" HorizontalOptions="End" />
-            <CollectionView VerticalOptions="Start" ItemsSource="{Binding Notes}">
+            <Button Text="Añadir Comentario" Command="{Binding AddUpdateReservaCommand}" HorizontalOptions="End" />
+            <CollectionView VerticalOptions="Start" ItemsSource="{Binding Reservas}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Note">
+                    <DataTemplate x:DataType="models:Reserva">
                         <Frame Margin="10" Padding="30">
                             <StackLayout >
                                 <VerticalStackLayout >
-                                    <Label Text="{Binding Titulo}" FontSize="18" FontAttributes="Bold" />
-                                    <Label Text="{Binding Text}" FontSize="16"/>
+                                    <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" />
+                                    <Label Text="{Binding Apellido}" FontSize="16"/>
+                                    <Label Text="{Binding servicio}" FontSize="16"/>
                                 </VerticalStackLayout>
-                                <!--<Label Text="{Binding ConQueso}" />-->
                             </StackLayout>
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:AllNotesModel}},Path=MostrarAccionCommand}"
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:AllReservasModel}},Path=MostrarAccionCommand}"
                                                           CommandParameter="{Binding .}" />
                             </Frame.GestureRecognizers>
                         </Frame>
