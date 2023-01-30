@@ -62,7 +62,7 @@
                     Grid.Column="0"
                     Grid.Row="1"
                     Text="Visualizar servicios"
-                    Clicked="servicios_Clicked"
+                    Clicked="Servicios_Clicked"
                     
                     />
 
@@ -83,6 +83,34 @@
                     Text="Sobre nosotros"
                     Clicked="Button_Clicked"
                     
+                    />
+            </Grid>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="50" RowSpacing="20" RowDefinitions="*,*">
+                <Image
+                    x:Name="imageNasa"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+                <Label
+                    x:Name="Frase"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    FontFamily="Lato"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="White"/>
+                <Button
+                    FontFamily="Lato"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="Pulsame"
+                    Clicked="Frase_and_Image"
                     />
             </Grid>
         </VerticalStackLayout>
