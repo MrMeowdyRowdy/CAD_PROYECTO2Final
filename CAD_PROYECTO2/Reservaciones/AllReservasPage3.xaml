@@ -10,8 +10,8 @@
 
     <ScrollView>
         <StackLayout Margin="10" VerticalOptions="Fill">
-            <Label  Text="Lista de Comentarios" FontSize="28"/>
-            <Button Text="Añadir Comentario" Command="{Binding AddUpdateReservaCommand}" HorizontalOptions="End" />
+            <Label  Text="Lista de Reservas" FontSize="28"/>
+            <Button Text="Añadir Reservas" Command="{Binding AddUpdateReservaCommand}" HorizontalOptions="End" />
             <CollectionView VerticalOptions="Start" ItemsSource="{Binding Reservas}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Reserva">
