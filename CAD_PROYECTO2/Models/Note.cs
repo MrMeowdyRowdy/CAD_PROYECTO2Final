@@ -18,7 +18,6 @@ namespace CAD_PROYECTO2.Models
         public string Text { get; set; }
         public string Titulo { get; set; }
         public DateTime Date { get; set; }
-
         public int serv { get; set; }
 
     }
