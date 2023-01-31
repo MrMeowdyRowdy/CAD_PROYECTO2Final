@@ -37,7 +37,6 @@
                 HorizontalOptions="Center"
                 />
 
-
             <Label
                 Text="Espacio profesional que permite vivir una experiencia única, con atención personalizada, en un ambiente con arquitectura industrial. Las áreas de trabajo están diseñadas de manera confortable. Poseemos dos plantas con todo lo que pueda necesitar. Estratégicamente ubicado en la zona Centro Norte del Distrito Metropolitano de Quito."
                 FontFamily="Lato"
@@ -45,6 +44,7 @@
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
                 />
+            
             <Grid ColumnDefinitions="*,*" ColumnSpacing="50" RowSpacing="20" RowDefinitions="*,*">
                 <Image
                     Grid.Column="0"
@@ -112,6 +112,7 @@
                     Text="Frase del día e imagen"
                     Clicked="Frase_and_Image"
                     />
+                
             </Grid>
         </VerticalStackLayout>
     </ScrollView>

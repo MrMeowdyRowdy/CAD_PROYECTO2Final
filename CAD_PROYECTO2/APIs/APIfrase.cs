@@ -15,6 +15,8 @@ namespace CAD_PROYECTO2.APIs
         public int year { get; set; }
         public string url { get; set; }
     }
+
+
     public class Quote
     {
         public string quote { get; set; }
@@ -29,6 +31,7 @@ namespace CAD_PROYECTO2.APIs
         public string background { get; set; }
         public string title { get; set; }
     }
+
     public class Root
     {
         public Success success { get; set; }
