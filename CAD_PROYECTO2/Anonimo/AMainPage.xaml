@@ -40,7 +40,6 @@
                 VerticalOptions="Center"
                 HorizontalTextAlignment="Center"
                 />
-
             <Image
                 Source="estudio.jpg"
                 HeightRequest="400"
