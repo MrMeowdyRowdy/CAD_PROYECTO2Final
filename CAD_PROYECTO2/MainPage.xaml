@@ -31,12 +31,12 @@
                 VerticalOptions="Center"
                 HorizontalTextAlignment="Center"
                 />
-
             <Image
                 Source="estudio.jpg"
                 HeightRequest="400"
                 HorizontalOptions="Center"
                 />
+
 
             <Label
                 Text="Espacio profesional que permite vivir una experiencia única, con atención personalizada, en un ambiente con arquitectura industrial. Las áreas de trabajo están diseñadas de manera confortable. Poseemos dos plantas con todo lo que pueda necesitar. Estratégicamente ubicado en la zona Centro Norte del Distrito Metropolitano de Quito."
@@ -45,7 +45,6 @@
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
                 />
-
             <Grid ColumnDefinitions="*,*" ColumnSpacing="50" RowSpacing="20" RowDefinitions="*,*">
                 <Image
                     Grid.Column="0"
@@ -66,6 +65,7 @@
                     
                     />
 
+
                 <Image  
                     Grid.Column="1"
                     Grid.Row="0"
@@ -74,7 +74,6 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Start"
                     />
-
                 <Button
                     FontFamily="Lato"
                     FontAttributes="Bold"
@@ -84,6 +83,7 @@
                     Clicked="Button_Clicked"
                     
                     />
+
             </Grid>
 
             <Grid ColumnDefinitions="*,*" ColumnSpacing="50" RowSpacing="20" RowDefinitions="*,*">
