@@ -116,7 +116,7 @@
                     FontAttributes="Bold"
                     Grid.Column="1"
                     Grid.Row="1"
-                    Text="Frase del día e imágen"
+                    Text="Frase del día e imagen"
                     Clicked="Frase_and_Image"
                     />
             </Grid>
