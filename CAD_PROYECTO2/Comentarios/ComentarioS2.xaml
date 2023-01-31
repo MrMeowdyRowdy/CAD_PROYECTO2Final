@@ -15,14 +15,14 @@
 
     <StackLayout Margin="10" Spacing="15">
         <VerticalStackLayout>
-            <Label Text="Nombre de la Hamburguesa"  />
+            <Label Text="Nombre del servicio"  />
             <Entry Text="{Binding NoteDetail.Titulo}" Placeholder="Titulo" />
             <BoxView HeightRequest="0.8" Color="Gray" />
         </VerticalStackLayout>
 
 
         <VerticalStackLayout>
-            <Label Text="Descripcion de la Hamburguesa" />
+            <Label Text="Descripción del comentario sobre su servicio" />
             <Entry  Text="{Binding NoteDetail.Text}" Placeholder="Comentario" />
             <BoxView HeightRequest="0.8" Color="Gray" />
         </VerticalStackLayout>
