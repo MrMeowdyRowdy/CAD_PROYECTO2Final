@@ -17,6 +17,7 @@ namespace CAD_PROYECTO2.Models
         public String servicio { get; set; }
         //public DateOnly fecha { get; set; } 
 
+
         public Reserva(string nombre, string Apellido, string servicio)
         {
             this.Nombre = nombre;

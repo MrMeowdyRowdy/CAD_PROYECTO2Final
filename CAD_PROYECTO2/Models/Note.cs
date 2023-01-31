@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 namespace CAD_PROYECTO2.Models
 {
     [Table("Note")]
+
     public class Note
     {
-        [PrimaryKey,AutoIncrement]
+        [PrimaryKey, AutoIncrement]
         public int IdComentario { get; set; }
 
         public string Filename { get; set; }
