@@ -91,7 +91,6 @@
                     Grid.Row="1"
                     Text="Sobre nosotros"
                     Clicked="Button_Clicked"
-                    
                     />
             </Grid>
 
@@ -118,7 +117,7 @@
                     FontAttributes="Bold"
                     Grid.Column="1"
                     Grid.Row="1"
-                    Text="Pulsame"
+                    Text="Frase del día e imágen"
                     Clicked="Frase_and_Image"
                     />
             </Grid>
